@@ -39,14 +39,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name Here" textAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="q8h-fe-R9M">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name Here" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="q8h-fe-R9M">
                                 <rect key="frame" x="205" y="124" width="425.99999999999977" height="29.999999999999929"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Here" textAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="m9I-Ma-lOx">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Here" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="m9I-Ma-lOx">
                                 <rect key="frame" x="205" y="198" width="425.99999999999977" height="29.999999999999929"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -61,6 +61,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNB-cv-Uyt"/>
+                                </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gbf-Vz-tdB">
                                 <rect key="frame" x="0.0" y="538" width="834" height="656"/>
@@ -80,6 +83,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activity" destination="Dwi-LE-5Bn" id="LcS-9K-jCE"/>
+                        <outlet property="lbEmail" destination="48z-SI-Kvn" id="Bmk-QG-73j"/>
+                        <outlet property="lbName" destination="PYI-7r-6Ta" id="3ts-Za-suL"/>
+                        <outlet property="txEmail" destination="m9I-Ma-lOx" id="bL4-Ue-swN"/>
+                        <outlet property="txName" destination="q8h-fe-R9M" id="ABG-J0-ilY"/>
+                        <outlet property="wbPage" destination="Gbf-Vz-tdB" id="mti-XG-oIE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
