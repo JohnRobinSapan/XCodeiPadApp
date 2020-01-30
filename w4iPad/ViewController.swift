@@ -26,11 +26,19 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if UIDevice.current.userInterfaceIdiom == .pad {
+        
         let urlAddress = URL(string: "https://www.google.ca")
         let url = URLRequest(url: urlAddress!)
         
         wbPage.load(url)
         wbPage.navigationDelegate = self
+            
+        } else {
+            wbPage.isHidden = true
+            activity.isHidden = true
+        }
+        
     }
     
     
