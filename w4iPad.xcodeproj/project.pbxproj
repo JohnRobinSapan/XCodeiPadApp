@@ -13,6 +13,7 @@
 		520A463B23E0C7BA007914F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520A463A23E0C7BA007914F1 /* Assets.xcassets */; };
 		520A463E23E0C7BA007914F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520A463C23E0C7BA007914F1 /* LaunchScreen.storyboard */; };
 		520A466323E0CD5B007914F1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520A466223E0CD5B007914F1 /* WebKit.framework */; };
+		5217E4B023E30E67003B9891 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217E4AF23E30E67003B9891 /* MyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		520A463D23E0C7BA007914F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520A463F23E0C7BA007914F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520A466223E0CD5B007914F1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5217E4AF23E30E67003B9891 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				520A463A23E0C7BA007914F1 /* Assets.xcassets */,
 				520A463C23E0C7BA007914F1 /* LaunchScreen.storyboard */,
 				520A463F23E0C7BA007914F1 /* Info.plist */,
+				5217E4AF23E30E67003B9891 /* MyData.swift */,
 			);
 			path = w4iPad;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5217E4B023E30E67003B9891 /* MyData.swift in Sources */,
 				520A463623E0C7B9007914F1 /* ViewController.swift in Sources */,
 				520A463423E0C7B9007914F1 /* AppDelegate.swift in Sources */,
 			);

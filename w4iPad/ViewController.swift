@@ -18,12 +18,6 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     
     @IBOutlet var lbName : UILabel!
     @IBOutlet var lbEmail : UILabel!
-    
-    
-    @IBAction func submit(sender : UIButton) {
-        lbName.text = txName.text
-        lbEmail.text = txEmail.text
-    }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return textField.resignFirstResponder()
@@ -49,7 +43,30 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         activity.isHidden = true
         activity.stopAnimating()
     }
-
+    
+    @IBAction func saveData(sender : UIButton) {
+        let alertbox = UIAlertController(title: "Warning", message: "Are you sure?", preferredStyle: .alert)
+        
+        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { (alert) in
+            self.doUpdate()
+            self.dismiss(animated: true, completion: nil)
+        }
+        alertbox.addAction(noAction)
+        alertbox.addAction(yesAction)
+        present(alertbox, animated: true)
+    }
+    
+    func doUpdate() {
+        let name = txName.text
+        let email = txEmail.text
+        
+        let mydata = MyData()
+        mydata.initWithData(name: name!, email: email!)
+        
+        lbName.text = mydata.name
+        lbEmail.text = mydata.email
+    }
 
 }
 

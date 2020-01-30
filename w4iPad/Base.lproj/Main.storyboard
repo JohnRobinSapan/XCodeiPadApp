@@ -62,7 +62,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="submitWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNB-cv-Uyt"/>
+                                    <action selector="saveDataWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLG-Qs-Jcn"/>
                                 </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gbf-Vz-tdB">
